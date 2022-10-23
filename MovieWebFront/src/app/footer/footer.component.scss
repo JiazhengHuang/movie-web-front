@@ -1,0 +1,48 @@
+.site-footer {
+  margin: 70px 45px 0 45px;
+  color: #737373;
+  font-size: 0.6em;
+  padding: 20px;
+}
+
+a {
+  color: #737373;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.footer-top {
+  margin: 0 0 40px;
+  padding: 0;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  flex: 25%;
+  margin-bottom: 15px;
+}
+
+.lang-selection-container {
+  margin-top: 40px;
+}
+
+select {
+  background-color: transparent;
+  color: #737373;
+  border: 0.5px solid #737373;
+  padding: 5px;
+}

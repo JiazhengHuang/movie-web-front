@@ -1,0 +1,37 @@
+.header-container {
+  display: flex;
+  height: 45px;
+  padding-top: 20px;
+}
+
+img {
+  flex: 1;
+  height: 100%;
+  width: 100px;
+}
+
+.spaceBtw {
+  flex: 3;
+}
+
+select,
+button {
+  flex: 1;
+  margin: 0 10px;
+}
+
+select {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+button {
+  background-color: red;
+  border: 0;
+  color: white;
+  width: 100px;
+  border-radius: 5px;
+}
