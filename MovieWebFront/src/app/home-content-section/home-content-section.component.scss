@@ -1,0 +1,224 @@
+.card {
+  background: transparent;
+  border-bottom: 8px solid #222;
+  color: #fff;
+  margin-bottom: 0;
+  padding: 50px 5%;
+  position: relative;
+}
+
+.hero {
+  height: auto;
+
+  h1 {
+    margin: 0 15%;
+  }
+
+  h2 {
+    font-weight: 100;
+  }
+}
+
+.hero-background {
+  opacity: 0.5;
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
+  height: 100%;
+  left: 0;
+  top: 0;
+
+  img {
+    min-width: 100%;
+    height: 100%;
+  }
+}
+
+app-header {
+  background-color: transparent;
+  bottom: 0;
+  margin: 0 auto;
+  position: relative;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  transition: black 0.5s;
+}
+
+.hero-info {
+  margin: 0 auto;
+  padding: 75px 0;
+  max-width: 900px;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-submite-container {
+  width: 100%;
+  height: 45px;
+
+  input {
+    height: 100%;
+    width: 60%;
+    border: 0;
+    padding-left: 10px;
+  }
+
+  button {
+    height: 100%;
+    width: 20%;
+    border: 0;
+    background-color: red;
+    color: #fff;
+  }
+}
+
+.card-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+.hero-background-img {
+  width: 100%;
+  height: auto;
+}
+
+.downloadAndWatch .card-container {
+  flex-direction: row-reverse;
+}
+
+.card-text-container {
+  padding: 0 3rem 0 0;
+}
+
+.card-animation-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.downloadAndWatch .card-animation-container {
+  display: flex;
+}
+
+.center-part {
+  width: 20%;
+}
+
+.card-animation-img {
+  position: relative;
+  z-index: 2;
+  height: auto;
+  max-width: 100%;
+}
+
+.watchOnTv .card-animation-video-container {
+  height: 100%;
+  left: 49.5%;
+  max-height: 54%;
+  max-width: 73%;
+  position: absolute;
+  top: 46%;
+  transform: translate(-50%, -47%);
+  width: 100%;
+}
+
+.watchOnDevice .card-animation-video-container {
+  height: 100%;
+  left: 50%;
+  max-height: 47%;
+  max-width: 63%;
+  position: absolute;
+  top: 34%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.card-animation-video {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.card-animation-download-container {
+  display: flex;
+  align-items: center;
+  background: #000;
+  border: 2px solid hsla(0, 0%, 100%, 0.25);
+  border-radius: 0.75em;
+  bottom: 5%;
+  left: 50%;
+  margin: 0 auto;
+  min-width: 15em;
+  padding: 0.25em 0.65em;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 60%;
+  z-index: 2;
+  justify-content: space-between;
+}
+
+.card-animation-download-image-container {
+  margin: 0 1em 0 0;
+}
+
+.card-animation-download-image {
+  height: 4em;
+}
+
+.card-animation-download-text {
+  margin: 0.3em 0;
+}
+
+.download-text0 {
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.download-text1 {
+  font-size: 0.6em;
+  font-weight: 400;
+  color: rgb(0, 132, 255);
+}
+
+.card-animation-download-gif {
+  background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif)
+    50% no-repeat;
+  background-size: 100%;
+  content: "";
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 3em;
+  outline: 2px solid #000;
+  outline-offset: -2px;
+  width: 3em;
+}
+
+@media only screen and (max-width: 949px) {
+  .card-container {
+    flex-direction: column;
+  }
+
+  .downloadAndWatch .card-container {
+    flex-direction: column;
+  }
+
+  .card-text-container {
+    text-align: center;
+    padding: 0;
+  }
+
+  .card-animation-container {
+    max-width: 600px;
+    width: 100%;
+  }
+}
