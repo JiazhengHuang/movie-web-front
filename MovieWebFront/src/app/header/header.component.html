@@ -1,9 +1,18 @@
 <div class="header-container">
-  <img [src]="logoPath" alt="netflixxxx logo" />
+  <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">
+    <img [src]="logoPath" alt="NETFLIXXXX" />
+  </a>
   <div class="spaceBtw"></div>
   <select id="language">
     <option value="English">English</option>
     <option value="Español">Español</option>
   </select>
-  <button>Sign In</button>
+  <a
+    class="signin-btn"
+    routerLink="/signin"
+    routerLinkActive="active"
+    ariaCurrentWhenActive="page"
+  >
+    <button>Sign In</button>
+  </a>
 </div>
