@@ -1,0 +1,52 @@
+<div class="signin-page-container">
+  <div class="header-wraper">
+    <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">
+      <img [src]="logoPath" alt="NETFLIXXXX" />
+    </a>
+  </div>
+  <form action="">
+    <div class="row">
+      <div class="col">
+        <div class="input-container">
+          <h1>Sign In</h1>
+          <div class="email-input">
+            <label for="">Email or phone number</label>
+            <input type="text" />
+          </div>
+          <div class="pw-input">
+            <label for="">Password</label>
+            <input type="text" />
+          </div>
+          <div class="btn-submit">
+            <button>Sign In</button>
+          </div>
+          <div class="remember-checkbox">
+            <input type="checkbox" name="" id="" />
+            <label for="checkbox">Remember me</label>
+            <a>Need help?</a>
+          </div>
+        </div>
+        <div class="signup-conatiner">
+          <div>
+            New to Netflixxxx?
+            <a
+              routerLink="/register"
+              routerLinkActive="active"
+              ariaCurrentWhenActive="page"
+              >Sign up now</a
+            >.
+          </div>
+          <div>
+            <p>
+              <span
+                >This page is protected by Google reCAPTCHA to ensure you're not
+                a bot.</span
+              >&nbsp;<button>Learn more.</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <app-footer></app-footer>
+</div>

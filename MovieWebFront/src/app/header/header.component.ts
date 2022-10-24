@@ -6,8 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  logoPath =
-    'https://fontmeme.com/temporary/8dd7dd6338ff924ec714e650deda65dc.png';
+  logoPath = '../images/netflixxxx.png';
 
   constructor() {}
 

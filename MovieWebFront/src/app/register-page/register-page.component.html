@@ -1,0 +1,40 @@
+<div class="signin-page-container">
+  <div class="header-wraper">
+    <a routerLink="/" routerLinkActive="active" ariaCurrentWhenActive="page">
+      <img [src]="logoPath" alt="NETFLIXXXX" />
+    </a>
+  </div>
+  <form action="">
+    <div class="row">
+      <div class="col">
+        <div class="input-container">
+          <h1>Sign In</h1>
+          <div class="email-input">
+            <label for="">Email or phone number</label>
+            <input type="text" />
+          </div>
+          <div class="pw-input">
+            <label for="">Password</label>
+            <input type="text" />
+          </div>
+          <div class="rpw-input">
+            <label for="">Reenter password</label>
+            <input type="text" />
+          </div>
+          <div class="btn-submit">
+            <a
+              routerLink="/signin"
+              routerLinkActive="active"
+              ariaCurrentWhenActive="page"
+              ><button>Submit</button></a
+            >
+          </div>
+          <div class="remember-checkbox">
+            <a href="">Need help?</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <app-footer></app-footer>
+</div>
