@@ -76,6 +76,11 @@ app-header {
     color: #fff;
     padding: 0;
   }
+
+  .email-required {
+    color: orange;
+    display: none;
+  }
 }
 
 .card-container {

@@ -14,9 +14,9 @@ img {
   flex: 3;
 }
 
-select,
-button {
-  flex: 1;
+.lang-select,
+.signin-btn {
+  width: 150px;
   margin: 0 10px;
 }
 
@@ -32,7 +32,6 @@ select {
   background-color: red;
   border: 0;
   color: white;
-  width: 100px;
   border-radius: 5px;
   height: 100%;
   margin: 0;

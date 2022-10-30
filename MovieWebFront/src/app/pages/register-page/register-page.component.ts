@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./register-page.component.scss'],
 })
 export class RegisterPageComponent implements OnInit {
-  logoPath = '../images/netflixxxx.png';
-
+  logoPath =
+    'https://fontmeme.com/permalink/221024/8dd7dd6338ff924ec714e650deda65dc.png';
   constructor() {}
 
   ngOnInit(): void {}

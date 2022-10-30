@@ -12,10 +12,26 @@
         <p>
           Ready to watch? Enter your email to create or restart your membership.
         </p>
-        <div class="hero-submite-container">
-          <input type="text" placeholder="Email address" />
-          <button>Get Started</button>
-        </div>
+        <form
+          #heroEmailForm="ngForm"
+          (ngSubmit)="onSubmit(heroEmailForm)"
+          class="hero-submite-container"
+        >
+          <input
+            type="text"
+            placeholder="Email address"
+            id="email"
+            name="email"
+            [(ngModel)]="inputEmail"
+            required
+            email
+          />
+          <button>Get Started ></button>
+          <br />
+          <label class="email-required" [ngStyle]="{ display: labelStyle }"
+            >Email is required!
+          </label>
+        </form>
       </div>
     </div>
     <div class="card watchOnTv">
