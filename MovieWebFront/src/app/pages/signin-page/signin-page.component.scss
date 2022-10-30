@@ -43,6 +43,22 @@ form {
   padding: 50px 20px 0 0;
   width: 100%;
 
+  .notmatch-error {
+    background-color: #e87c03;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: smaller;
+    margin-bottom: 15px;
+    display: none;
+
+    a:link,
+    a:visited,
+    a:active,
+    a:hover {
+      color: white;
+    }
+  }
+
   .email-input,
   .pw-input {
     background-color: white;
@@ -69,6 +85,15 @@ form {
       font-size: xx-small;
       padding: 8px 20px 0 20px;
     }
+  }
+
+  .pw-inputError,
+  .email-inputError {
+    display: none;
+    color: orange;
+    font-weight: 100;
+    font-size: smaller;
+    margin-bottom: 10px;
   }
 
   .btn-submit {
