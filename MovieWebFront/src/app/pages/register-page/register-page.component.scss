@@ -72,6 +72,16 @@ form {
     }
   }
 
+  .pw-inputError,
+  .email-inputError,
+  .rpw-inputError {
+    display: none;
+    color: orange;
+    font-weight: 100;
+    font-size: smaller;
+    margin-bottom: 10px;
+  }
+
   .btn-submit {
     background-color: red;
     margin-top: 50px;

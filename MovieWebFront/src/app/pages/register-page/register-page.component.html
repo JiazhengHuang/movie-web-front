@@ -4,30 +4,40 @@
       <img [src]="logoPath" alt="NETFLIXXXX" />
     </a>
   </div>
-  <form action="">
+  <form #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm)">
     <div class="row">
       <div class="col">
         <div class="input-container">
           <h1>Sign In</h1>
           <div class="email-input">
-            <label for="">Email or phone number</label>
-            <input type="text" />
+            <label for="email">Email or phone number</label>
+            <input name="email" [(ngModel)]="inputemail" required email />
+          </div>
+          <div
+            class="email-inputError"
+            [ngStyle]="{ display: emailInputErrorStyle }"
+          >
+            Please enter a valid email.
           </div>
           <div class="pw-input">
-            <label for="">Password</label>
-            <input type="text" />
+            <label for="password">Password</label>
+            <input name="password" [(ngModel)]="inputpw" required />
+          </div>
+          <div class="pw-inputError" [ngStyle]="{ display: psInputErrorStyle }">
+            Your password must contain between 4 and 60 characters.
           </div>
           <div class="rpw-input">
-            <label for="">Reenter password</label>
-            <input type="text" />
+            <label for="reenterpassword">Reenter password</label>
+            <input name="reenterpassword" [(ngModel)]="inputrpw" required />
+          </div>
+          <div
+            class="rpw-inputError"
+            [ngStyle]="{ display: rpsInputErrorStyle }"
+          >
+            Password does not match.
           </div>
           <div class="btn-submit">
-            <a
-              routerLink="/signin"
-              routerLinkActive="active"
-              ariaCurrentWhenActive="page"
-              ><button>Submit</button></a
-            >
+            <button>Submit</button>
           </div>
           <div class="remember-checkbox">
             <a href="">Need help?</a>

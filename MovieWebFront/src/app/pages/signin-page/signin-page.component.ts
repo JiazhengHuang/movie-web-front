@@ -25,8 +25,6 @@ export class SigninPageComponent implements OnInit {
   ngOnInit(): void {}
 
   onSubmit(ngForm: NgForm) {
-    // console.log(ngForm.form.controls['email']);
-    // console.log(ngForm.form.controls['password'].valid);
     if (!ngForm.form.valid) {
       this.emailInputErrorStyle = !ngForm.form.controls['email'].valid
         ? 'block'
@@ -37,8 +35,6 @@ export class SigninPageComponent implements OnInit {
     } else {
       this.inputemail = ngForm.form.controls['email'].value;
       this.inputpw = ngForm.form.controls['password'].value;
-      console.log(this.inputemail);
-      console.log(this.inputpw);
       if (this.tempEmail === this.inputemail && this.tempPw === this.inputpw) {
         this.router.navigateByUrl('/movielist');
       } else {
