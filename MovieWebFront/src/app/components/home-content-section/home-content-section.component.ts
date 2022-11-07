@@ -20,12 +20,11 @@ export class HomeContentSectionComponent implements OnInit {
   ngOnInit(): void {}
 
   onSubmit(ngForm: NgForm) {
-    console.log(ngForm.form.valid);
     if (!ngForm.form.valid) {
       this.labelStyle = 'block';
     } else {
       this.inputEmail = ngForm.form.value.email;
-      console.log(this.inputEmail);
+      // console.log(this.inputEmail);
       this.router.navigateByUrl('/register');
     }
   }

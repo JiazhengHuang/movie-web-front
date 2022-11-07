@@ -37,7 +37,12 @@
             Password does not match.
           </div>
           <div class="btn-submit">
-            <button>Submit</button>
+            <button
+              [routerLink]="['/signin']"
+              [queryParams]="{inputemail, inputpw}"
+            >
+              Submit
+            </button>
           </div>
           <div class="remember-checkbox">
             <a href="">Need help?</a>

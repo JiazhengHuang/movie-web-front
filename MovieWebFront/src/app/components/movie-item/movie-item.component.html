@@ -1,1 +1,15 @@
-<p>movie-item works!</p>
+<a
+  [routerLink]="['/moviepage', movie.movieId]"
+  routerLinkActive="active"
+  ariaCurrentWhenActive="page"
+>
+  <li id="{{ movie.movieId }}">
+    <img
+      src="https://www.themoviedb.org/t/p/w440_and_h660_face{{
+        movie.moviePosterPath
+      }}"
+    />
+    <p class="title">{{ movie.movieName }}</p>
+    <p class="rate">{{ movie.movieRate | number: "1.1-1" }}</p>
+  </li>
+</a>

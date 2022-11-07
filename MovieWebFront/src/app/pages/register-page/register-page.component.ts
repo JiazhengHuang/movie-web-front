@@ -1,6 +1,6 @@
 import { NgForm } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-register-page',
@@ -19,9 +19,15 @@ export class RegisterPageComponent implements OnInit {
   psInputErrorStyle: string = '';
   rpsInputErrorStyle: string = '';
 
-  constructor(private router: Router) {}
+  constructor(
+    private activatedRouter: ActivatedRoute,
+    private router: Router
+  ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.inputemail =
+      this.activatedRouter.snapshot.queryParamMap.get('inputEmail') || '';
+  }
 
   onSubmit(ngForm: NgForm) {
     if (!ngForm.form.valid) {
@@ -38,9 +44,9 @@ export class RegisterPageComponent implements OnInit {
       this.inputemail = ngForm.form.controls['email'].value;
       this.inputpw = ngForm.form.controls['password'].value;
       this.inputrpw = ngForm.form.controls['reenterpassword'].value;
-      console.log(this.inputemail);
-      console.log(this.inputpw);
-      console.log(this.inputrpw);
+      // console.log(this.inputemail);
+      // console.log(this.inputpw);
+      // console.log(this.inputrpw);
       this.emailInputErrorStyle = 'none';
       this.psInputErrorStyle = 'none';
       if (this.inputpw === this.inputrpw) {

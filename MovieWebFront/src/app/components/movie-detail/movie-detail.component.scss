@@ -1,0 +1,92 @@
+.container {
+  color: white;
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .background-img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .card-container {
+    max-width: 900px;
+    height: 400px;
+    position: absolute;
+    z-index: 1;
+    margin: auto;
+
+    .poster {
+      width: 260px;
+      height: 100%;
+      margin: 0;
+      float: left;
+
+      .poster-img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .info {
+      max-width: 550px;
+      height: 100%;
+      float: left;
+      margin-left: 30px;
+      display: flex;
+      flex-direction: column;
+
+      .rate {
+        top: 220px;
+        right: 15px;
+        color: darkorange;
+        font-size: x-large;
+        font-weight: 800;
+        margin: 0;
+      }
+
+      .tagline {
+        font-size: small;
+        color: gray;
+      }
+
+      .overview {
+        font-weight: 100;
+        font-size: smaller;
+        margin: 0;
+      }
+
+      h3 {
+        margin: 15px 0;
+      }
+
+      .date {
+        color: gray;
+        font-weight: 200;
+      }
+
+      .trailer-btn {
+        margin-top: 15px;
+        height: 30px;
+        width: 150px;
+        color: white;
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 5px;
+        transition: 0.3s;
+      }
+
+      .trailer-btn:hover {
+        background-color: white;
+        color: black;
+      }
+    }
+  }
+}

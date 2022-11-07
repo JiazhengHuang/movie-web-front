@@ -1,0 +1,12 @@
+ul {
+  max-width: 1500px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  padding: 0;
+  justify-content: center;
+
+  app-movie-item {
+    margin: 10px;
+  }
+}

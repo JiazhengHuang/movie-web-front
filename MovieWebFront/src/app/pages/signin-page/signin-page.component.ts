@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-signin-page',
@@ -20,9 +20,17 @@ export class SigninPageComponent implements OnInit {
   emailInputErrorStyle: string = '';
   psInputErrorStyle: string = '';
 
-  constructor(private router: Router) {}
+  constructor(
+    private activatedRouter: ActivatedRoute,
+    private router: Router
+  ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.inputemail =
+      this.activatedRouter.snapshot.queryParamMap.get('inputemail') || '';
+    this.inputpw =
+      this.activatedRouter.snapshot.queryParamMap.get('inputpw') || '';
+  }
 
   onSubmit(ngForm: NgForm) {
     if (!ngForm.form.valid) {
@@ -36,7 +44,7 @@ export class SigninPageComponent implements OnInit {
       this.inputemail = ngForm.form.controls['email'].value;
       this.inputpw = ngForm.form.controls['password'].value;
       if (this.tempEmail === this.inputemail && this.tempPw === this.inputpw) {
-        this.router.navigateByUrl('/movielist');
+        this.router.navigateByUrl('/moviepage');
       } else {
         this.notmatchErrorStyle = 'block';
       }
